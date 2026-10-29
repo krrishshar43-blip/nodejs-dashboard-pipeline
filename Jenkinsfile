@@ -24,7 +24,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'docker rm -f dashboard-app || true'
-                sh 'docker run -d --name dashboard-app -p 3002:3000 dashboard-app:latest'
+                sh 'docker run -d --restart unless-stopped --name dashboard-app -p 3002:3000 dashboard-app:latest'
                 sh 'docker ps --filter name=dashboard-app'
             }
         }
