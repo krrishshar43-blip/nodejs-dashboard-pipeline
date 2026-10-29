@@ -68,7 +68,7 @@ app.get("/", (req, res) => {
       <main>
         <section class="hero">
           <span class="status">● Application Running</span>
-          <h2>Welcome to My CI/CD Project</h2>
+             <h2>Welcome to My CI/CD Project - Version 2 Live!</h2>
           <p>This project demonstrates a Node.js application, Docker containerization, GitHub source control, and a Jenkins pipeline.</p>
         </section>
         <section class="cards">
